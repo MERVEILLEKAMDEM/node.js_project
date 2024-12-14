@@ -4,6 +4,8 @@ const morgan = require('morgan');
 
 // Initialize the Express application
 const app = express();
+require('dotenv').config();
+require('./libs/dbConnect');
 
 // Set the view engine and views directory
 app.set('views', './views'); // Ensure this path is correct relative to your project structure
