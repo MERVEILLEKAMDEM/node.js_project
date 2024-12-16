@@ -10,13 +10,13 @@ const createUser = async (req, res) => {
 };
 
 const getUser = async (req, res) => {
-  const user = await User.findOne({ email: 'nathan@mail.com' });
+  const user = await User.findOne({ email: 'Merveillekamdem019@gmail.com' });
 
   res.render('user', { message: 'User Retrieved', user: user });
 };
 
 const deleteUser = async (req, res) => {
-  await User.findOneAndDelete({ email: 'nathan@mail.com' });
+  await User.findOneAndDelete({ email: 'Merveillekamdem019@mail.com' });
   
   res.render('user', { message: 'User Deleted', user: null });
 };
